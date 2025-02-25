@@ -14,7 +14,7 @@ The exercise consists of:
 - Extracting the first word of this fact.
 - Displaying an image of a cat that includes this first word using the [Cat as a Service](https://cataas.com/cat/says/hello) API.
 
-[Screenshot 1](./screenshots/vite-cats.png)
+![Screenshot 1](./screenshots/vite-cats.png)
 
 ## 🚀 Features
 
@@ -97,8 +97,7 @@ In the terminal, run:
 npm create vite@latest
 ```
 
-I name the project, in this case Project name: PRUEBA_TECNICA_CATS
-**and I choose: Vanilla and Javascript** as language and finally I move to the project directory with `cd vite-cats`.
+I name the project, in this case Project name: vite-cats_technical-test, and I choose: Vanilla and Javascript as language and finally I move to the project directory with `cd vite-cats`.
 
 **II. Installing Dependencies:**
 ```bash
@@ -160,9 +159,8 @@ I create the **src folder and inside App.jsx** and start building my App.
 ```js
 export function App() {
 return (
-<h1>Kitten App </h1>
-)
-}
+<h1> Kitten App </h1>
+)}
 ```
 
 And in main.jsx, initially :
