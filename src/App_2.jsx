@@ -109,7 +109,7 @@ export function App() {
       )
     );
   }
-  async function getBreedImage(breed) {
+  async function getBreedImage(breed) { // Obtengo data, retorna JSON
     console.log(
       // `Url fetch desde selector: https://api.thecatapi.com/v1/images/search?breed_ids=${breed.id}` devuelve solo una pic raza
       `Url fetch desde selector: https://api.thecatapi.com/v1/images/search?breed_ids=${breed.id}&limit=100&page=1`
@@ -123,10 +123,10 @@ export function App() {
     return razasAPIjson;
   }
 
-  function getRazas(breed) {
+  function getRazas(breed) {  // Llamo a getBreedImage para actualizar el estado
     console.log("Llamando getRazas con: " + JSON.stringify(breed));
     getBreedImage(breed).then((return_desde_funcion) =>
-      setBreeds(return_desde_funcion)
+      setBreeds(return_desde_funcion) 
     );
   }
 
